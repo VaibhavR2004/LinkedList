@@ -1,0 +1,28 @@
+//https://www.youtube.com/watch?v=VxOFflTXlXo&list=PLDzeHZWIZsTryvtXdMr6rPh4IDexB5NIA
+
+bool detectLoop(Node *head)
+{
+
+    if (head == NULL)
+        return false;
+
+    map<Node *, bool> visited;
+
+    Node *temp = head;
+
+    while (temp != NULL)
+    {
+
+        // cycle is present
+        if (visited[temp] == true)
+        {
+            cout << "Cycle is present on element"
+                 << " " << temp->data << endl;
+            return true;
+        }
+
+        visited[temp] = true;
+        temp = temp->next;
+    }
+    return false;
+}
