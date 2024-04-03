@@ -1,3 +1,5 @@
+// https://www.youtube.com/watch?v=aXQWhbvT3w0
+// https://www.geeksforgeeks.org/problems/add-1-to-a-number-represented-as-linked-list/1
 class Solution
 {
     public:
